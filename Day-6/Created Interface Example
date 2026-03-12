@@ -1,0 +1,33 @@
+interface Laptop{
+	default void display1()
+	{
+		System.out.println("abs");
+	}
+	static void display()
+	{
+		System.out.println("abs");
+	}
+}
+interface Laptop2
+{
+	static void print()
+	{
+		
+	}
+}
+class a
+{
+	
+}
+public class Interface1 extends a implements Laptop,Laptop2{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("basic");
+		
+		Laptop.display();
+
+	}
+	
+
+}
