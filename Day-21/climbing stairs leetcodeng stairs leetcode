@@ -1,0 +1,23 @@
+class Solution {
+    int []arr;
+   
+    public int climbStairs(int n) {
+        arr=new int[n+1];
+        Arrays.fill(arr,-1);
+        return rect(n);
+    }
+        int rect(int n)
+        {
+            if(n<=1)
+            {
+                return 1;
+            }
+            if(arr[n]!=-1)
+            {
+                return arr[n];
+            }
+            arr[n]=rect(n-1)+rect(n-2);
+            return arr[n];
+        }
+        
+}
